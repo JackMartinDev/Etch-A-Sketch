@@ -1,0 +1,12 @@
+.container {
+  --size: 16;
+  display: grid;
+  grid-template-columns: repeat(var(--size), 25px);
+  grid-template-rows: repeat(var(--size), 25px);
+  gap: 1px;
+}
+
+.grid {
+  border: 1px solid black;
+  background-color: white;
+}

@@ -1,8 +1,11 @@
 const container = document.getElementById("container");
 container.classList.add("container");
 
-for (let i = 0; i < 16; i++) {
-  for (let j = 0; j < 16; j++) {
+let size = prompt("Enter desired board size");
+container.style.setProperty("--size", size);
+
+for (let i = 0; i < size; i++) {
+  for (let j = 0; j < size; j++) {
     const div = document.createElement("div");
     div.classList.add("grid");
     /*
