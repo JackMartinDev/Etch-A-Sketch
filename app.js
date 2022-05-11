@@ -1,7 +1,9 @@
 const container = document.getElementById("container");
-container.classList.add("container");
 const clearButton = document.createElement("button");
+
+container.classList.add("container");
 clearButton.textContent = "Clear Board";
+
 let size = prompt("Enter desired board size");
 container.style.setProperty("--size", size);
 
